@@ -576,3 +576,4 @@ J-VIS/
 Proprietary. For internal use only.
 
 **J-VIS** — Voice-first AI Assistant. Security is the product.
+**J-VIS** : Just Very Intelligent System
