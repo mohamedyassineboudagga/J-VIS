@@ -1,0 +1,44 @@
+# Environment
+.env
+.env.local
+.env.production
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+*.egg
+.eggs/
+venv/
+.venv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# SQLite
+*.db
+*.sqlite3
+
+# Audit logs (mutable data)
+audit/*.jsonl
+
+# Power mode state (mutable runtime state)
+jvis_power_mode.json
+
+# Docker
+docker-compose.override.yml
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Secrets
+*.pem
+*.key
+credentials/

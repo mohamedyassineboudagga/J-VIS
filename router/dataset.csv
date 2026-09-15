@@ -1,0 +1,530 @@
+keyword,category,routing,example,description
+what,question_words,ollama,What is a REST API?,Asks for information or definition
+why,question_words,ollama,Why is my code slow?,Asks for explanation or reasoning
+how,question_words,ollama,How does recursion work?,Asks for explanation or method
+when,question_words,ollama,When should I use async?,Asks for timing or conditions
+where,question_words,ollama,Where are environment variables stored?,Asks for location or placement
+who,question_words,ollama,Who maintains this library?,Asks about people or ownership
+which,question_words,ollama,Which database should I choose?,Asks for a choice or recommendation
+is,question_words,ollama,Is Python better than Java?,Yes/no question
+are,question_words,ollama,Are closures used in Python?,Yes/no question
+do,question_words,ollama,Do I need a virtual environment?,Yes/no question
+does,question_words,ollama,Does Docker work on Windows?,Yes/no question
+did,question_words,ollama,Did the build succeed?,Yes/no question about the past
+can,question_words,ollama,Can I use SQLite for production?,Asks about possibility
+could,question_words,ollama,Could you explain pointers?,Polite request for explanation
+should,question_words,ollama,Should I use TypeScript?,Asks for advice
+would,question_words,ollama,Would this approach scale?,Asks about a hypothetical outcome
+tell me,question_words,ollama,Tell me about machine learning,Requests information
+explain,question_words,ollama,Explain how DNS works,Requests explanation
+define,question_words,ollama,Define idempotency,Requests definition
+describe,question_words,ollama,Describe the MVC pattern,Requests description
+summarize,question_words,ollama,Summarize this error message,Requests summary
+compare,question_words,ollama,Compare React and Vue,Requests comparison
+meaning,question_words,ollama,What is the meaning of polymorphism?,Requests meaning
+difference,question_words,ollama,Difference between git merge and rebase,Requests difference
+ask,question_words,ollama,I ask you about caching,Question context
+give me,question_words,ollama,Give me an example of a closure,Requests an example
+list,question_words,ollama,List the HTTP status codes,Requests enumeration
+recommend,question_words,ollama,Recommend a Python web framework,Requests recommendation
+suggest,question_words,ollama,Suggest a naming convention,Requests suggestion
+advice,question_words,ollama,Give me advice on error handling,Requests advice
+help me understand,question_words,ollama,Help me understand async/await,Requests understanding
+teach,question_words,ollama,Teach me about Big O notation,Requests teaching
+learn,question_words,ollama,I want to learn about databases,Learning intent
+tutorial,question_words,ollama,Give me a tutorial on Git,Requests tutorial
+guide,question_words,ollama,Guide me through setting up Docker,Requests guidance
+example,question_words,ollama,Show me an example of a decorator,Requests an example
+question_mark,question_words,ollama,What is an API?,Any command ending with ? is a question
+create,code_action,opencode,Create a new React component,Action: generate new code
+write,code_action,opencode,Write a Python script to parse CSV,Action: produce code
+build,code_action,opencode,Build the project,Action: compile/build
+fix,code_action,opencode,Fix the login bug,Action: repair code
+refactor,code_action,opencode,Refactor the payment module,Action: restructure code
+implement,code_action,opencode,Implement user authentication,Action: add functionality
+add,code_action,opencode,Add a dark mode toggle,Action: add a feature
+update,code_action,opencode,Update the dependencies,Action: modify existing code
+modify,code_action,opencode,Modify the API endpoint,Action: change code
+change,code_action,opencode,Change the color scheme,Action: alter code
+improve,code_action,opencode,Improve the query performance,Action: enhance code
+optimize,code_action,opencode,Optimize the image loading,Action: improve performance
+rewrite,code_action,opencode,Rewrite the legacy module,Action: replace code
+remove,code_action,opencode,Remove the unused imports,Action: delete code
+delete,code_action,opencode,Delete the old migration,Action: remove code
+rename,code_action,opencode,Rename the variable to userId,Action: rename identifiers
+move,code_action,opencode,Move the utils to a shared folder,Action: relocate code
+copy,code_action,opencode,Copy the config template,Action: duplicate code
+convert,code_action,opencode,Convert this to TypeScript,Action: transform code
+migrate,code_action,opencode,Migrate the database schema,Action: migrate data/schema
+generate,code_action,opencode,Generate a CRUD API,Action: produce code
+scaffold,code_action,opencode,Scaffold a new service,Action: generate project structure
+setup,code_action,opencode,Set up the development environment,Action: configure environment
+configure,code_action,opencode,Configure the CI pipeline,Action: set configuration
+install,code_action,opencode,Install the dependencies,Action: install packages
+uninstall,code_action,opencode,Uninstall the old package,Action: remove a package
+deploy,code_action,opencode,Deploy to production,Action: release code
+publish,code_action,opencode,Publish the package to npm,Action: release a package
+release,code_action,opencode,Release version 2.0,Action: create a release
+run,code_action,opencode,Run the test suite,Action: execute code
+execute,code_action,opencode,Execute the migration script,Action: run code
+start,code_action,opencode,Start the development server,Action: launch a process
+stop,code_action,opencode,Stop the background worker,Action: halt a process
+restart,code_action,opencode,Restart the API service,Action: restart a process
+test,code_action,opencode,Test the checkout flow,Action: run tests
+debug,code_action,opencode,Debug the memory leak,Action: find and fix bugs
+troubleshoot,code_action,opencode,Troubleshoot the connection error,Action: diagnose issues
+diagnose,code_action,opencode,Diagnose the slow startup,Action: analyze a problem
+review,code_action,opencode,Review the pull request,Action: inspect code
+inspect,code_action,opencode,Inspect the request payload,Action: examine code
+analyze,code_action,opencode,Analyze the performance bottleneck,Action: study code
+profile,code_action,opencode,Profile the CPU usage,Action: measure performance
+benchmark,code_action,opencode,Benchmark the sorting algorithm,Action: measure speed
+validate,code_action,opencode,Validate the JSON schema,Action: check correctness
+verify,code_action,opencode,Verify the checksum,Action: confirm correctness
+check,code_action,opencode,Check for syntax errors,Action: examine for errors
+lint,code_action,opencode,Lint the codebase,Action: run a linter
+format,code_action,opencode,Format the code with Prettier,Action: auto-format code
+compile,code_action,opencode,Compile the C++ project,Action: compile code
+package,code_action,opencode,Package the application,Action: bundle code
+commit,code_action,opencode,Commit the changes,Action: git commit
+push,code_action,opencode,Push to the remote branch,Action: git push
+pull,code_action,opencode,Pull the latest changes,Action: git pull
+merge,code_action,opencode,Merge the feature branch,Action: git merge
+rebase,code_action,opencode,Rebase onto main,Action: git rebase
+branch,code_action,opencode,Create a new branch,Action: git branch
+clone,code_action,opencode,Clone the repository,Action: git clone
+fetch,code_action,opencode,Fetch the remote updates,Action: git fetch
+stash,code_action,opencode,Stash the current changes,Action: git stash
+tag,code_action,opencode,Tag version 1.0.0,Action: git tag
+backup,code_action,opencode,Backup the database,Action: create a backup
+restore,code_action,opencode,Restore from the backup,Action: recover data
+export,code_action,opencode,Export the data to CSV,Action: extract data
+import,code_action,opencode,Import the seed data,Action: load data
+connect,code_action,opencode,Connect to the database,Action: establish a connection
+disconnect,code_action,opencode,Disconnect the WebSocket,Action: close a connection
+authenticate,code_action,opencode,Authenticate the API request,Action: handle auth
+authorize,code_action,opencode,Authorize the admin route,Action: handle permissions
+login,code_action,opencode,Implement the login flow,Action: auth feature
+logout,code_action,opencode,Add logout functionality,Action: auth feature
+encrypt,code_action,opencode,Encrypt the user passwords,Action: secure data
+decrypt,code_action,opencode,Decrypt the stored tokens,Action: unsecure data
+hash,code_action,opencode,Hash the API keys,Action: hash data
+scan,code_action,opencode,Scan for vulnerabilities,Action: security check
+audit,code_action,opencode,Audit the dependencies,Action: security review
+monitor,code_action,opencode,Monitor the server logs,Action: watch the system
+watch,code_action,opencode,Watch the file changes,Action: observe changes
+track,code_action,opencode,Track the user events,Action: record activity
+log,code_action,opencode,Log the request details,Action: record data
+report,code_action,opencode,Report the test results,Action: generate a report
+clean,code_action,opencode,Clean the build artifacts,Action: remove clutter
+clear,code_action,opencode,Clear the cache,Action: empty storage
+reset,code_action,opencode,Reset the database,Action: restore the initial state
+initialize,code_action,opencode,Initialize the project,Action: start a project
+integrate,code_action,opencode,Integrate the payment gateway,Action: add an integration
+automate,code_action,opencode,Automate the deployment,Action: add automation
+orchestrate,code_action,opencode,Orchestrate the microservices,Action: manage services
+containerize,code_action,opencode,Containerize the app with Docker,Action: create containers
+scale,code_action,opencode,Scale the application horizontally,Action: expand capacity
+secure,code_action,opencode,Secure the API endpoints,Action: harden code
+harden,code_action,opencode,Harden the server config,Action: improve security
+upgrade,code_action,opencode,Upgrade the framework version,Action: update the version
+downgrade,code_action,opencode,Downgrade the package,Action: revert the version
+patch,code_action,opencode,Patch the security hole,Action: apply a fix
+hotfix,code_action,opencode,Hotfix the production bug,Action: urgent fix
+resolve,code_action,opencode,Resolve the merge conflict,Action: fix a conflict
+solve,code_action,opencode,Solve the algorithm problem,Action: produce a solution
+develop,code_action,opencode,Develop the new module,Action: build code
+code,code_action,opencode,Code the API endpoint,Action: write code
+program,code_action,opencode,Program the robot controller,Action: write code
+script,code_action,opencode,Script the data cleanup,Action: write a script
+render,code_action,opencode,Render the dashboard,Action: produce output
+parse,code_action,opencode,Parse the log file,Action: process data
+transform,code_action,opencode,Transform the XML to JSON,Action: convert data
+serialize,code_action,opencode,Serialize the object,Action: convert to a storable format
+deserialize,code_action,opencode,Deserialize the response,Action: convert from a stored format
+cache,code_action,opencode,Cache the API responses,Action: add caching
+throttle,code_action,opencode,Throttle the requests,Action: limit the rate
+retry,code_action,opencode,Add retry logic,Action: add resilience
+timeout,code_action,opencode,Set a timeout on requests,Action: add limits
+paginate,code_action,opencode,Paginate the results,Action: add pagination
+sort,code_action,opencode,Sort the list by date,Action: order data
+filter,code_action,opencode,Filter the search results,Action: narrow data
+group,code_action,opencode,Group the transactions by month,Action: aggregate data
+aggregate,code_action,opencode,Aggregate the metrics,Action: combine data
+join,code_action,opencode,Join the tables on user_id,Action: combine data
+normalize,code_action,opencode,Normalize the database,Action: restructure data
+denormalize,code_action,opencode,Denormalize for performance,Action: restructure data
+index,code_action,opencode,Index the email column,Action: add an index
+query,code_action,opencode,Query the user table,Action: retrieve data
+insert,code_action,opencode,Insert the new record,Action: add data
+upsert,code_action,opencode,Upsert the settings,Action: insert or update
+truncate,code_action,opencode,Truncate the log table,Action: clear a table
+seed,code_action,opencode,Seed the database,Action: add sample data
+dump,code_action,opencode,Dump the database,Action: export data
+load,code_action,opencode,Load the fixture data,Action: import data
+stream,code_action,opencode,Stream the video chunks,Action: process streaming data
+batch,code_action,opencode,Batch the API calls,Action: process in groups
+queue,code_action,opencode,Queue the background jobs,Action: add to a queue
+schedule,code_action,opencode,Schedule the nightly job,Action: add a cron job
+cron,code_action,opencode,Set up a cron job,Action: schedule a task
+daemon,code_action,opencode,Run the daemon in the background,Action: background process
+service,code_action,opencode,Create a new service,Action: build a service
+api,code_action,opencode,Build a REST API,Action: build an API
+endpoint,code_action,opencode,Add a new endpoint,Action: add a route
+route,code_action,opencode,Define the routes,Action: add routing
+middleware,code_action,opencode,Add authentication middleware,Action: add middleware
+controller,code_action,opencode,Create the user controller,Action: build a controller
+component,code_action,opencode,Create a button component,Action: build a component
+hook,code_action,opencode,Write a custom hook,Action: build a hook
+module,code_action,opencode,Create the payment module,Action: build a module
+library,code_action,opencode,Create a utility library,Action: build a library
+plugin,code_action,opencode,Write a VS Code plugin,Action: build a plugin
+extension,code_action,opencode,Build a browser extension,Action: build an extension
+widget,code_action,opencode,Create a dashboard widget,Action: build a widget
+template,code_action,opencode,Create an email template,Action: build a template
+layout,code_action,opencode,Design the page layout,Action: build a layout
+style,code_action,opencode,Style the login page,Action: add styling
+theme,code_action,opencode,Add a dark theme,Action: add theming
+responsive,code_action,opencode,Make the site responsive,Action: adapt the layout
+animation,code_action,opencode,Add a loading animation,Action: add motion
+transition,code_action,opencode,Add page transitions,Action: add motion
+accessibility,code_action,opencode,Improve accessibility,Action: add a11y
+seo,code_action,opencode,Optimize for SEO,Action: improve search ranking
+localization,code_action,opencode,Add localization support,Action: add i18n
+internationalization,code_action,opencode,Internationalize the app,Action: add i18n
+validation,code_action,opencode,Add form validation,Action: add validation
+sanitize,code_action,opencode,Sanitize the user input,Action: clean input
+escape,code_action,opencode,Escape the HTML entities,Action: prevent injection
+inject,code_action,opencode,Inject the dependency,Action: add a dependency
+mock,code_action,opencode,Mock the API responses,Action: create test doubles
+stub,code_action,opencode,Stub the database calls,Action: create test doubles
+spy,code_action,opencode,Spy on the function calls,Action: test observation
+fixture,code_action,opencode,Create test fixtures,Action: test data
+assert,code_action,opencode,Assert the response status,Action: test assertion
+expect,code_action,opencode,Expect the result to equal 5,Action: test assertion
+coverage,code_action,opencode,Check the test coverage,Action: measure tests
+regression,code_action,opencode,Run regression tests,Action: test suite
+snapshot,code_action,opencode,Update the snapshots,Action: test snapshots
+tdd,code_action,opencode,Write tests first (TDD),Action: test-driven development
+bdd,code_action,opencode,Write BDD scenarios,Action: behavior-driven development
+e2e,code_action,opencode,Write e2e tests,Action: end-to-end tests
+integration,code_action,opencode,Write integration tests,Action: integration tests
+unit,code_action,opencode,Write unit tests,Action: unit tests
+load test,code_action,opencode,Run a load test,Action: performance test
+stress test,code_action,opencode,Stress test the server,Action: performance test
+fuzz,code_action,opencode,Fuzz the input parser,Action: robustness test
+property,code_action,opencode,Write property-based tests,Action: property tests
+contract,code_action,opencode,Test the API contract,Action: contract tests
+python,language,opencode,Write a Python script,Programming language
+javascript,language,opencode,Fix the JavaScript bug,Programming language
+typescript,language,opencode,Convert to TypeScript,Programming language
+java,language,opencode,Create a Java class,Programming language
+c++,language,opencode,Compile the C++ code,Programming language
+c#,language,opencode,Write a C# service,Programming language
+go,language,opencode,Write a Go routine,Programming language
+golang,language,opencode,Build a Golang API,Programming language
+rust,language,opencode,Fix the Rust borrow error,Programming language
+php,language,opencode,Create a PHP endpoint,Programming language
+ruby,language,opencode,Write a Ruby script,Programming language
+swift,language,opencode,Build a Swift app,Programming language
+kotlin,language,opencode,Write a Kotlin coroutine,Programming language
+dart,language,opencode,Write a Dart class,Programming language
+scala,language,opencode,Write a Scala function,Programming language
+lua,language,opencode,Write a Lua script,Programming language
+perl,language,opencode,Fix the Perl regex,Programming language
+r,language,opencode,Write an R analysis script,Programming language
+matlab,language,opencode,Write a MATLAB function,Programming language
+bash,language,opencode,Write a bash script,Shell language
+shell,language,opencode,Write a shell script,Shell language
+powershell,language,opencode,Write a PowerShell script,Shell language
+sql,language,opencode,Write a SQL query,Query language
+html,language,opencode,Create an HTML page,Markup language
+css,language,opencode,Style with CSS,Styling language
+sass,language,opencode,Write SASS styles,Styling language
+less,language,opencode,Write LESS styles,Styling language
+json,language,opencode,Create a JSON config,Data format
+yaml,language,opencode,Write a YAML config,Data format
+xml,language,opencode,Parse the XML file,Data format
+markdown,language,opencode,Write a README in Markdown,Documentation format
+react,framework,opencode,Create a React component,Frontend framework
+angular,framework,opencode,Fix the Angular service,Frontend framework
+vue,framework,opencode,Create a Vue component,Frontend framework
+svelte,framework,opencode,Build a Svelte app,Frontend framework
+next.js,framework,opencode,Add a Next.js API route,Frontend framework
+nuxt,framework,opencode,Build a Nuxt page,Frontend framework
+django,framework,opencode,Create a Django model,Backend framework
+flask,framework,opencode,Write a Flask route,Backend framework
+fastapi,framework,opencode,Create a FastAPI endpoint,Backend framework
+laravel,framework,opencode,Create a Laravel controller,Backend framework
+symfony,framework,opencode,Build a Symfony bundle,Backend framework
+spring,framework,opencode,Create a Spring controller,Backend framework
+spring boot,framework,opencode,Build a Spring Boot app,Backend framework
+express,framework,opencode,Create an Express route,Backend framework
+fastify,framework,opencode,Build a Fastify plugin,Backend framework
+nestjs,framework,opencode,Create a NestJS module,Backend framework
+rails,framework,opencode,Create a Rails model,Backend framework
+asp.net,framework,opencode,Build an ASP.NET API,Backend framework
+flutter,framework,opencode,Create a Flutter widget,Mobile framework
+react native,framework,opencode,Fix the React Native crash,Mobile framework
+tensorflow,framework,opencode,Train a TensorFlow model,ML framework
+pytorch,framework,opencode,Build a PyTorch model,ML framework
+scikit-learn,framework,opencode,Train a scikit-learn model,ML framework
+pandas,framework,opencode,Clean data with pandas,Data library
+numpy,framework,opencode,Compute with numpy,Data library
+jquery,framework,opencode,Fix the jQuery selector,Legacy library
+bootstrap,framework,opencode,Style with Bootstrap,CSS framework
+tailwind,framework,opencode,Style with Tailwind,CSS framework
+material ui,framework,opencode,Use Material UI components,UI library
+redux,framework,opencode,Add a Redux store,State management
+graphql,framework,opencode,Write a GraphQL resolver,API query language
+apollo,framework,opencode,Set up Apollo Client,GraphQL client
+prisma,framework,opencode,Create a Prisma schema,ORM
+typeorm,framework,opencode,Create a TypeORM entity,ORM
+sequelize,framework,opencode,Define a Sequelize model,ORM
+drizzle,framework,opencode,Write a Drizzle query,ORM
+eloquent,framework,opencode,Write an Eloquent query,ORM
+hibernate,framework,opencode,Fix the Hibernate mapping,ORM
+jpa,framework,opencode,Write a JPA repository,ORM
+mybatis,framework,opencode,Write a MyBatis mapper,ORM
+git,git,opencode,Commit with git,Version control
+github,git,opencode,Create a GitHub repo,Version control platform
+gitlab,git,opencode,Set up GitLab CI,Version control platform
+bitbucket,git,opencode,Create a Bitbucket pipeline,Version control platform
+docker,docker,opencode,Write a Dockerfile,Containerization
+docker-compose,docker,opencode,Write a docker-compose file,Container orchestration
+kubernetes,devops,opencode,Deploy to Kubernetes,Container orchestration
+k8s,devops,opencode,Create a k8s deployment,Container orchestration
+helm,devops,opencode,Write a Helm chart,K8s packaging
+terraform,devops,opencode,Write a Terraform config,Infrastructure as code
+ansible,devops,opencode,Write an Ansible playbook,Configuration management
+jenkins,devops,opencode,Configure a Jenkins job,CI/CD
+github actions,devops,opencode,Write a GitHub Action,CI/CD
+gitlab ci,devops,opencode,Configure GitLab CI,CI/CD
+circleci,devops,opencode,Configure CircleCI,CI/CD
+travis,devops,opencode,Fix the Travis config,CI/CD
+npm,npm,opencode,Install with npm,Package manager
+yarn,npm,opencode,Install with yarn,Package manager
+pnpm,npm,opencode,Install with pnpm,Package manager
+npx,npm,opencode,Run with npx,Package runner
+pip,python,opencode,Install with pip,Python package manager
+pipenv,python,opencode,Set up pipenv,Python package manager
+poetry,python,opencode,Configure poetry,Python package manager
+conda,python,opencode,Create a conda env,Python package manager
+composer,php,opencode,Install with composer,PHP package manager
+maven,java,opencode,Build with Maven,Java build tool
+gradle,java,opencode,Configure Gradle,Java build tool
+cargo,rust,opencode,Build with cargo,Rust package manager
+webpack,build,opencode,Configure webpack,Bundler
+vite,build,opencode,Set up Vite,Bundler
+rollup,build,opencode,Configure rollup,Bundler
+esbuild,build,opencode,Use esbuild,Bundler
+babel,build,opencode,Configure Babel,Transpiler
+eslint,lint,opencode,Configure ESLint,Linter
+prettier,lint,opencode,Set up Prettier,Formatter
+tsc,typescript,opencode,Run tsc,TypeScript compiler
+jest,test,opencode,Write a Jest test,Test framework
+mocha,test,opencode,Write a Mocha test,Test framework
+chai,test,opencode,Use Chai assertions,Test library
+jasmine,test,opencode,Write a Jasmine spec,Test framework
+karma,test,opencode,Configure Karma,Test runner
+cypress,test,opencode,Write a Cypress test,E2E test framework
+playwright,test,opencode,Write a Playwright test,E2E test framework
+puppeteer,test,opencode,Write a Puppeteer script,Browser automation
+selenium,test,opencode,Write a Selenium test,Browser automation
+pytest,test,opencode,Write a pytest test,Python test framework
+unittest,test,opencode,Write a unittest test,Python test framework
+phpunit,test,opencode,Write a PHPUnit test,PHP test framework
+rspec,test,opencode,Write an RSpec test,Ruby test framework
+minitest,test,opencode,Write a Minitest test,Ruby test framework
+go test,test,opencode,Run go test,Go test tool
+junit,test,opencode,Write a JUnit test,Java test framework
+nunit,test,opencode,Write an NUnit test,.NET test framework
+xunit,test,opencode,Write an xUnit test,.NET test framework
+postman,test,opencode,Create a Postman collection,API testing tool
+swagger,api,opencode,Write a Swagger spec,API documentation
+openapi,api,opencode,Create an OpenAPI spec,API documentation
+curl,api,opencode,Test with curl,HTTP client
+wget,api,opencode,Download with wget,Download tool
+jq,api,opencode,Parse JSON with jq,JSON processor
+grep,shell,opencode,Search with grep,Text search
+sed,shell,opencode,Replace with sed,Text editor
+awk,shell,opencode,Process with awk,Text processor
+find,shell,opencode,Find files with find,File search
+xargs,shell,opencode,Use xargs,Command chaining
+ssh,shell,opencode,Connect via SSH,Remote access
+scp,shell,opencode,Copy with scp,File transfer
+rsync,shell,opencode,Sync with rsync,File sync
+tmux,shell,opencode,Use tmux,Terminal multiplexer
+vim,shell,opencode,Edit with vim,Text editor
+nano,shell,opencode,Edit with nano,Text editor
+vscode,ide,opencode,Configure VS Code,IDE
+intellij,ide,opencode,Set up IntelliJ,IDE
+pycharm,ide,opencode,Configure PyCharm,IDE
+webstorm,ide,opencode,Set up WebStorm,IDE
+android studio,ide,opencode,Set up Android Studio,IDE
+xcode,ide,opencode,Build with Xcode,IDE
+mysql,database,opencode,Query MySQL,Relational database
+postgresql,database,opencode,Connect to PostgreSQL,Relational database
+postgres,database,opencode,Query Postgres,Relational database
+sqlite,database,opencode,Use SQLite,Embedded database
+mongodb,database,opencode,Query MongoDB,NoSQL database
+redis,database,opencode,Cache with Redis,Key-value store
+elasticsearch,database,opencode,Query Elasticsearch,Search engine
+cassandra,database,opencode,Set up Cassandra,NoSQL database
+dynamodb,database,opencode,Query DynamoDB,NoSQL database
+firebase,database,opencode,Set up Firebase,Backend as a service
+firestore,database,opencode,Query Firestore,NoSQL database
+supabase,database,opencode,Set up Supabase,Backend as a service
+oracle,database,opencode,Query Oracle,Relational database
+mssql,database,opencode,Query SQL Server,Relational database
+sql server,database,opencode,Query SQL Server,Relational database
+mariadb,database,opencode,Query MariaDB,Relational database
+neo4j,database,opencode,Query Neo4j,Graph database
+influxdb,database,opencode,Query InfluxDB,Time-series database
+clickhouse,database,opencode,Query ClickHouse,Analytics database
+kafka,database,opencode,Set up Kafka,Message broker
+rabbitmq,database,opencode,Set up RabbitMQ,Message broker
+s3,database,opencode,Store files in S3,Object storage
+aws,cloud,opencode,Deploy to AWS,Cloud provider
+azure,cloud,opencode,Deploy to Azure,Cloud provider
+gcp,cloud,opencode,Deploy to GCP,Cloud provider
+google cloud,cloud,opencode,Set up Google Cloud,Cloud provider
+heroku,cloud,opencode,Deploy to Heroku,PaaS
+netlify,cloud,opencode,Deploy to Netlify,Static hosting
+vercel,cloud,opencode,Deploy to Vercel,Frontend hosting
+cloudflare,cloud,opencode,Configure Cloudflare,CDN/DNS
+digitalocean,cloud,opencode,Set up DigitalOcean,Cloud provider
+nginx,server,opencode,Configure nginx,Web server
+apache,server,opencode,Configure Apache,Web server
+caddy,server,opencode,Configure Caddy,Web server
+iis,server,opencode,Configure IIS,Web server
+ssl,security,opencode,Set up SSL,Encryption
+tls,security,opencode,Configure TLS,Encryption
+dns,server,opencode,Configure DNS,Domain resolution
+firewall,security,opencode,Configure the firewall,Network security
+vpn,security,opencode,Set up a VPN,Network security
+proxy,server,opencode,Configure a proxy,Network intermediary
+cdn,server,opencode,Set up a CDN,Content delivery
+ci,devops,opencode,Set up CI,Continuous integration
+cd,devops,opencode,Set up CD,Continuous delivery
+pipeline,devops,opencode,Create a pipeline,CI/CD workflow
+rollback,devops,opencode,Rollback the release,Revert deployment
+canary,devops,opencode,Set up canary deployment,Progressive rollout
+grafana,monitoring,opencode,Set up Grafana,Monitoring
+prometheus,monitoring,opencode,Configure Prometheus,Monitoring
+datadog,monitoring,opencode,Set up Datadog,Monitoring
+sentry,monitoring,opencode,Set up Sentry,Error tracking
+kibana,monitoring,opencode,Set up Kibana,Log visualization
+linux,os,opencode,Configure Linux,Operating system
+ubuntu,os,opencode,Set up Ubuntu,Linux distro
+debian,os,opencode,Configure Debian,Linux distro
+centos,os,opencode,Set up CentOS,Linux distro
+fedora,os,opencode,Configure Fedora,Linux distro
+arch,os,opencode,Set up Arch,Linux distro
+windows,os,opencode,Configure Windows,Operating system
+macos,os,opencode,Set up macOS,Operating system
+mac,os,opencode,Configure macOS,Operating system
+zsh,shell,opencode,Configure zsh,Shell
+fish,shell,opencode,Configure fish,Shell
+cmd,shell,opencode,Use cmd,Windows shell
+terminal,shell,opencode,Open the terminal,Shell interface
+cli,shell,opencode,Build a CLI tool,Command-line interface
+process,os,opencode,Kill the process,Process management
+systemd,os,opencode,Create a systemd service,Service manager
+kernel,os,opencode,Update the kernel,OS core
+driver,os,opencode,Fix the driver,Hardware interface
+filesystem,os,opencode,Manage the filesystem,Storage management
+permission,os,opencode,Fix the permissions,Access control
+chmod,os,opencode,Run chmod,File permissions
+chown,os,opencode,Run chown,File ownership
+sudo,os,opencode,Run with sudo,Privilege escalation
+environment variable,os,opencode,Set an environment variable,Configuration
+registry,os,opencode,Edit the registry,Windows config
+security,security,opencode,Harden the security,Security work
+vulnerability,security,opencode,Fix the vulnerability,Security flaw
+exploit,security,opencode,Patch the exploit,Attack vector
+cve,security,opencode,Check the CVE,Known vulnerability
+pentest,security,opencode,Run a pentest,Security testing
+xss,security,opencode,Fix the XSS,Web attack
+sql injection,security,opencode,Prevent SQL injection,Web attack
+csrf,security,opencode,Add CSRF protection,Web attack
+sso,security,opencode,Set up SSO,Authentication
+oauth,security,opencode,Implement OAuth,Authentication
+jwt,security,opencode,Implement JWT,Authentication
+token,security,opencode,Handle tokens,Authentication
+session,security,opencode,Manage sessions,Authentication
+cookie,security,opencode,Set cookies,Web state
+authentication,security,opencode,Implement authentication,Auth
+authorization,security,opencode,Implement authorization,Permissions
+encryption,security,opencode,Add encryption,Data protection
+decryption,security,opencode,Handle decryption,Data protection
+hashing,security,opencode,Add hashing,Data integrity
+bcrypt,security,opencode,Use bcrypt,Password hashing
+sha,security,opencode,Use SHA-256,Hashing algorithm
+md5,security,opencode,Use MD5,Hashing algorithm
+aes,security,opencode,Use AES,Symmetric encryption
+rsa,security,opencode,Use RSA,Asymmetric encryption
+https,security,opencode,Enable HTTPS,Secure protocol
+waf,security,opencode,Configure the WAF,Web firewall
+malware,security,opencode,Remove malware,Malicious software
+ransomware,security,opencode,Protect against ransomware,Malicious software
+phishing,security,opencode,Prevent phishing,Social engineering
+ddos,security,opencode,Mitigate DDoS,Network attack
+rate limit,security,opencode,Add rate limiting,Abuse prevention
+captcha,security,opencode,Add CAPTCHA,Bot prevention
+2fa,security,opencode,Add 2FA,Multi-factor auth
+mfa,security,opencode,Add MFA,Multi-factor auth
+password,security,opencode,Handle passwords,Credentials
+secret,security,opencode,Manage secrets,Credentials
+key,security,opencode,Manage API keys,Credentials
+certificate,security,opencode,Install the certificate,PKI
+website,web,opencode,Build a website,Web project
+web app,web,opencode,Build a web app,Web project
+frontend,web,opencode,Build the frontend,Client-side
+backend,web,opencode,Build the backend,Server-side
+fullstack,web,opencode,Build a fullstack app,Both sides
+rest,web,opencode,Build a REST API,API style
+websocket,web,opencode,Add WebSocket support,Real-time protocol
+http,web,opencode,Handle HTTP requests,Protocol
+url,web,opencode,Parse the URL,Address
+uri,web,opencode,Handle URIs,Address
+navigation,web,opencode,Add navigation,App navigation
+mobile-first,web,opencode,Design mobile-first,Design approach
+a11y,web,opencode,Improve a11y,Accessibility
+performance,web,opencode,Improve performance,Speed optimization
+optimization,web,opencode,Optimize the bundle,Performance work
+lazy loading,web,opencode,Add lazy loading,Deferred loading
+caching,web,opencode,Add caching,Speed optimization
+android,mobile,opencode,Build an Android app,Mobile platform
+ios,mobile,opencode,Build an iOS app,Mobile platform
+apk,mobile,opencode,Build the APK,Android package
+ipa,mobile,opencode,Build the IPA,iOS package
+app store,mobile,opencode,Publish to the App Store,App distribution
+play store,mobile,opencode,Publish to Play Store,App distribution
+push notification,mobile,opencode,Add push notifications,Mobile feature
+deep link,mobile,opencode,Add deep links,Mobile feature
+machine learning,data,opencode,Train a machine learning model,ML work
+deep learning,data,opencode,Build a deep learning model,ML work
+neural network,data,opencode,Design a neural network,ML architecture
+ai,data,opencode,Build an AI feature,AI work
+llm,data,opencode,Integrate an LLM,Language model
+nlp,data,opencode,Build an NLP pipeline,Language processing
+computer vision,data,opencode,Build a vision model,Image processing
+dataset,data,opencode,Prepare the dataset,Data collection
+training,data,opencode,Train the model,Model training
+inference,data,opencode,Run inference,Model prediction
+model,data,opencode,Deploy the model,ML artifact
+data science,data,opencode,Analyze the data,Data analysis
+data analysis,data,opencode,Analyze the dataset,Data analysis
+data pipeline,data,opencode,Build a data pipeline,Data processing
+etl,data,opencode,Build an ETL job,Data processing
+big data,data,opencode,Process big data,Large-scale data
+spark,data,opencode,Write a Spark job,Big data framework
+hadoop,data,opencode,Set up Hadoop,Big data framework
+describe yourself,special,jvis,describe yourself,J-VIS self-description command
+disappear,special,jvis,disappear,Close J-VIS / change power mode
+desaparece,special,jvis,desaparece,Close J-VIS / change power mode (Spanish)
+close yourself,special,jvis,close yourself,Close J-VIS / change power mode
+change my power,special,jvis,change my power,"Switch J-VIS power mode (red theme, opencode-only)"
+red mode,special,jvis,red mode,Activate red power mode
+power mode,special,jvis,power mode,Switch J-VIS power mode

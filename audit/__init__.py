@@ -1,0 +1,1 @@
+"""Audit package — Hash-chained immutable audit logger."""

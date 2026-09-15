@@ -1,0 +1,1 @@
+"""Tools package — Tool registry and implementations."""

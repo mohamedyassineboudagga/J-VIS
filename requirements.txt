@@ -1,0 +1,45 @@
+# J-VIS Dependencies — Pinned Versions
+# Core
+fastapi==0.141.1
+uvicorn[standard]==0.52.4
+python-dotenv==1.2.2
+pydantic==2.13.5
+
+# Database
+aiosqlite==0.22.1
+
+# RBAC
+casbin==1.43.0
+
+# LLM / Agent
+langchain==1.4.0
+langchain-community==0.4.2
+openai==3.13.0
+
+# Privacy / Redaction
+phonenumbers==9.0.39
+
+# Audit
+# (hashlib is stdlib — no extra package needed)
+
+# Biometrics (optional — install separately if needed)
+# speechbrain==1.1.1
+# torch (CPU build: pip install torch --index-url https://download.pytorch.org/whl/cpu)
+# opencv-python==4.9.0.80
+# face-recognition==1.3.0
+
+# Voice (optional)
+# faster-whisper==0.10.0
+# edge-tts==7.2.8
+# openwakeword==0.6.0
+
+# Docker (sandbox)
+docker==7.2.0
+
+# Testing
+pytest==9.1.1
+pytest-asyncio==1.4.0
+httpx==0.28.1
+
+# Crypto
+cryptography==50.0.1

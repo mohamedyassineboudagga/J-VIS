@@ -1,0 +1,1 @@
+"""Sandbox package — Isolated execution environment."""

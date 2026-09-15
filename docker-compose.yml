@@ -1,0 +1,41 @@
+# J-VIS docker-compose
+version: "3.8"
+
+services:
+  jvis:
+    build: .
+    container_name: jvis
+    ports:
+      - "8000:8000"
+    environment:
+      - LLM_PROVIDER=${LLM_PROVIDER:-ollama}
+      - OLLAMA_BASE_URL=http://ollama:11434
+      - OLLAMA_MODEL=${OLLAMA_MODEL:-llama3}
+      - REDACT_REMOTE_ONLY=${REDACT_REMOTE_ONLY:-true}
+      - SANDBOX_ENABLED=${SANDBOX_ENABLED:-true}
+      - SANDBOX_MEMORY_LIMIT=${SANDBOX_MEMORY_LIMIT:-512m}
+      - SANDBOX_TIMEOUT=${SANDBOX_TIMEOUT:-30}
+      - SANDBOX_IMAGE=${SANDBOX_IMAGE:-ubuntu:22.04}
+      - SESSION_TTL_MINUTES=${SESSION_TTL_MINUTES:-15}
+      - AUDIT_LOG_PATH=${AUDIT_LOG_PATH:-audit/jvis_audit.jsonl}
+      - RATE_LIMIT_PER_MINUTE=${RATE_LIMIT_PER_MINUTE:-30}
+      - HITL_TTL_MINUTES=${HITL_TTL_MINUTES:-5}
+      - SESSION_SECRET=${SESSION_SECRET:-}
+    volumes:
+      - ./audit:/app/audit
+      - ./jvis.db:/app/jvis.db
+    depends_on:
+      - ollama
+    restart: unless-stopped
+
+  ollama:
+    image: ollama/ollama:latest
+    container_name: jvis-ollama
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama_data:/root/.ollama
+    restart: unless-stopped
+
+volumes:
+  ollama_data:

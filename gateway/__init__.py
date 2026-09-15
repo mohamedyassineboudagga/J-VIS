@@ -1,0 +1,1 @@
+"""Gateway package — Policy enforcement layer."""

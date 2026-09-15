@@ -1,0 +1,22 @@
+p, master, *, allow
+p, operator, read, allow
+p, operator, write, allow
+p, operator, execute, allow
+p, operator, backup, allow
+p, user, read, allow
+p, user, write, allow
+p, guest, read, allow
+
+g, master, *
+g, operator, read
+g, operator, write
+g, operator, execute
+g, operator, backup
+g, user, read
+g, user, write
+g, guest, read
+
+# Role hierarchy
+g2, master, operator
+g2, operator, user
+g2, user, guest

@@ -1,0 +1,114 @@
+{
+  "tools": [
+    {
+      "name": "get_weather",
+      "description": "Get current weather for a location",
+      "required_role": "guest",
+      "required_permission": "read",
+      "hitl": false,
+      "sandbox": false,
+      "args_schema": {
+        "location": {"type": "string", "required": true}
+      }
+    },
+    {
+      "name": "web_search",
+      "description": "Search the web for information",
+      "required_role": "guest",
+      "required_permission": "read",
+      "hitl": false,
+      "sandbox": false,
+      "args_schema": {
+        "query": {"type": "string", "required": true}
+      }
+    },
+    {
+      "name": "play_music",
+      "description": "Play music by title or artist",
+      "required_role": "guest",
+      "required_permission": "read",
+      "hitl": false,
+      "sandbox": false,
+      "args_schema": {
+        "query": {"type": "string", "required": true}
+      }
+    },
+    {
+      "name": "list_files",
+      "description": "List files in a directory",
+      "required_role": "user",
+      "required_permission": "read",
+      "hitl": false,
+      "sandbox": false,
+      "args_schema": {
+        "path": {"type": "string", "required": false, "default": "."}
+      }
+    },
+    {
+      "name": "read_file",
+      "description": "Read contents of a file",
+      "required_role": "user",
+      "required_permission": "read",
+      "hitl": false,
+      "sandbox": false,
+      "args_schema": {
+        "path": {"type": "string", "required": true}
+      }
+    },
+    {
+      "name": "manage_calendar",
+      "description": "Create, update, or delete calendar events",
+      "required_role": "user",
+      "required_permission": "write",
+      "hitl": false,
+      "sandbox": false,
+      "args_schema": {
+        "action": {"type": "string", "required": true, "enum": ["create", "update", "delete", "list"]},
+        "event_details": {"type": "object", "required": false}
+      }
+    },
+    {
+      "name": "run_backup_script",
+      "description": "Execute a system backup script",
+      "required_role": "operator",
+      "required_permission": "backup",
+      "hitl": false,
+      "sandbox": true,
+      "args_schema": {
+        "script_name": {"type": "string", "required": true},
+        "target_path": {"type": "string", "required": false}
+      }
+    },
+    {
+      "name": "delete_file",
+      "description": "Delete a file from the system",
+      "required_role": "operator",
+      "required_permission": "write",
+      "hitl": true,
+      "sandbox": true,
+      "args_schema": {
+        "path": {"type": "string", "required": true}
+      }
+    },
+    {
+      "name": "reboot_server",
+      "description": "Reboot the server system",
+      "required_role": "master",
+      "required_permission": "execute",
+      "hitl": true,
+      "sandbox": false,
+      "args_schema": {}
+    },
+    {
+      "name": "run_python_snippet",
+      "description": "Execute a Python code snippet in a sandbox",
+      "required_role": "operator",
+      "required_permission": "execute",
+      "hitl": false,
+      "sandbox": true,
+      "args_schema": {
+        "code": {"type": "string", "required": true}
+      }
+    }
+  ]
+}

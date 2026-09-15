@@ -1,0 +1,1 @@
+"""Auth package — Users, roles, sessions, biometrics."""
